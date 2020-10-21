@@ -9,17 +9,26 @@
         </head>
         <body>
             <header>
-                <h1>Party at Sloan's Lake (Not FI Related)</h1>
+                <h1>Party at Sloan's Lake (Totally Not FI Related)</h1>
                 <h2>Denver Flatiron Party!!</h2>
             </header>
+            <div>
+                <p>Hello everyone! We decided since everyone in this cohort is awesome,
+                    to throw a party at the park for everyone! On us! Listed below is
+                    what is already being brought so far so let us know if you prefer something
+                    else and we got you! (Someone bring cups..)
+                </p>
+            </div>
             <main>
-                <h3>Request an  Item</h3>
+                <h3>Let us know what to bring!</h3>
+            <div id="beer-container">
                 <form method="POST" action="http://localhost:3000/beers">
                     <label for="beer">Beer : </label>
                     <input type="text" name="name" placeholder="Add Keg">
                     <input type="text" name="requested" placeholder="Enter Your Name">
                     <input type="submit" value="Add Keg">
                 </form>
+             </div>
                 <form method="POST" action="http://localhost:3000/wines">
                     <label for="wine">Wine : </label>
                     <input type="text" name="name" kind="kind" placeholder="Add Wine">
