@@ -13,6 +13,7 @@
                 <h2>Denver Flatiron Party!!</h2>
             </header>
             <main>
+                <h3>Request an  Item</h3>
                 <form method="POST" action="http://localhost:3000/beers">
                     <label for="beer">Beer : </label>
                     <input type="text" name="name" placeholder="Add Keg">
@@ -38,8 +39,28 @@
                     <input type="text" name="name" kind="kind" placeholder="Add beer">
                     <input type="submit" value="Add Mixer">
                 </form>
+                <h3>Current List</h3>
+                <ul id="drink-list">
+                  <li>Beers
+                  <ul id="beers">
+
+                  </ul>
+                  </li><li>Wines
+                  <ul id="wines">
+
+                  </ul>
+                  </li><li>Liquors
+                  <ul id="liquors">
+
+                  </ul>
+                  </li><li>Mixers
+                  <ul id="mixers">
+
+                  </ul>
+                  </li>
+                </ul>
             </main>
-                    
-            
+
+
         </body>
     </html>
