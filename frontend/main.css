@@ -20,7 +20,7 @@ body {
   border-style: solid;
   margin: 10px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 26px;
   flex-grow: 1;
   background-color: rgba(240,240,240,0.6);
 }
@@ -28,7 +28,6 @@ body {
 #drink-list {
   display: flex;
   align-items: stretch;
-  padding: 20px;
   flex-wrap: wrap;
 }
 
@@ -37,8 +36,7 @@ body {
   border-color: black;
   border-style: solid;
   margin: 10px;
-  padding: 30px;
-  min-height: 100%;
+  padding: 20px;
   flex-grow: 1;
   background-color: rgba(240,240,240,0.6);
 }
@@ -49,10 +47,15 @@ h4 {
 
 header, #welcome {
 
+  align: center;
   margin: 30px;
   border-radius: 1px;
   border-color: black;
   border-style: solid;
   background-color: rgba(240,240,240,0.6)
 
+}
+
+header {
+  margin-bottom: 0px;
 }
