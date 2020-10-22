@@ -12,54 +12,57 @@
                 <h1 align="center">Party at Sloan's Lake (Totally Not FI Related)</h1>
                 <h2 align="center">Denver Flatiron Party!!</h2>
             </header>
-            <div>
+            <div id="welcome">
                 <p align="center">Hello everyone! We decided since everyone in this cohort is awesome,
                     to throw a party at the park for everyone! On us! <br><br>Listed below is
                     what is already being brought so far so let us know if you prefer something
                     else and we got you! (Someone bring cups..)
+                    <h3 align="center">Let us know what to bring!</h3>
                 </p>
             </div>
             <main>
-                <h3 align="center">Let us know what to bring!</h3>
                 <div id="form-container" align="center">
                     <form method="POST" action="http://localhost:3000/beers">
-                      <label for="beer">Beer : </label><br>
-                      <input type="text" name="name" placeholder="Add Keg">
-                      <input type="text" name="requested" placeholder="Enter Your Name"><br>
+                      <label for="beer-field">Beer:</label><br>
+                      <input type="text" id="beer-field" name="name" placeholder="Add Keg"><br>
+                      <label for="requested-field">Your Name:</label><br>
+                      <input type="text" id="requested-field" name="requested" placeholder="Enter Your Name"><br>
                       <input type="submit" value="Add Keg">
                     </form>
                     <form method="POST" action="http://localhost:3000/wines">
-                      <label for="wine">Wine : </label><br>
-                      <input type="text" name="name" kind="kind" placeholder="Add Wine">
-                      <input type="text" name="requested" placeholder="Enter Your Name"><br>
+                      <label for="wine-field">Wine:</label><br>
+                      <input type="text" id="wine-field" name="name" placeholder="Add Wine"><br>
+                      <label for="wines-kinds">Kind:</label><br>
+                      <select name="kind" id="wines-kinds"></select><br>
+                      <label for="requested-field">Your name:</label><br>
+                      <input type="text" id="requested-field" name="requested" placeholder="Enter Your Name"><br>
                       <input type="submit" value="Add Bottle ">
                     </form>
                     <form method="POST" action="http://localhost:3000/liquors">
-                      <label for="liquor">Liquor : </label><br>
-                      <input type="text" name="name" placeholder="Add Bottle">
-                      <input type="text" name="requested" placeholder="Enter Your Name"><br>
+                      <label for="liquor-field">Liquor:</label><br>
+                      <input type="text" id="liquor-field" name="name" placeholder="Add Bottle"><br>
+                      <label for="liquors-kinds">Kind:</label><br>
+                      <select name="kind" id="liquors-kinds"></select><br>
+                      <label for="requested-field">Your name:</label><br>
+                      <input type="text" id="requested-field" name="requested" placeholder="Enter Your Name"><br>
                       <input type="submit" value="Add Bottle">
                     </form>
                     <form method="POST" action="http://localhost:3000/mixers">
-                      <label for="mixer">Mixer : </label><br>
-                      <input type="text" name="name" kind="kind" placeholder="Add Mixer">
-                      <input type="text" name="requested" placeholder="Enter Your Name"><br>
+                      <label for="mixer-field">Mixer:</label><br>
+                      <input type="text" id="mixer-field" name="name" kind="kind" placeholder="Add Mixer"><br>
+                      <label for="requested-field">Your name:</label><br>
+                      <input type="text" id="requested-field" name="requested" placeholder="Enter Your Name"><br>
                       <input type="submit" value="Add Mixer">
                     </form>
                   </div>
-                <h3 align="center">Current List</h3>
                 <div id="drink-list">
                   <ul id="beers"><h4>Beers</h4>
-
                   </ul>
                   <ul id="wines"><h4>Wines</h4>
-
                   </ul>
                   <ul id="liquors"><h4>Liquors</h4>
-
                   </ul>
                   <ul id="mixers"><h4>Mixers</h4>
-
                   </ul>
                 </div>
               </div>

@@ -1,18 +1,18 @@
 const baseURL = 'http://localhost:3000'
-const params = new URLSearchParams(window.location.search)
 
 getDrinkList()
+getDrinkKinds()
 
 function getDrinkList(){
 
-  drinks = ["beer","wine","liquor","mixer"]
+  const drinks = ["beer","wine","liquor","mixer"]
   drinks.forEach(drink => {
     getDrinks(drink)
   })
 
   function getDrinks(drink){
     const currentDrink = drink
-    const drinks = fetch(baseURL+`/${drink}s`)
+    fetch(baseURL+`/${drink}s`)
       .then(response => parseJSON(response))
       .then(drinks => {
         const drinksList = document.querySelector(`#${drink}s`)
@@ -23,6 +23,28 @@ function getDrinkList(){
         })
       })
   }
+}
+
+function getDrinkKinds(){
+  const existingKinds = []
+
+  const drinks = ["wine","liquor"]
+  drinks.forEach(drink => {
+    const dropdown = document.querySelector(`#${drink}s-kinds`)
+    fetch(baseURL+`/${drink}s`)
+      .then(response => parseJSON(response))
+      .then(drinks => {
+        drinks.forEach(drink => {
+          if(!existingKinds.includes(drink.kind)){
+            const option = document.createElement("option")
+            option.textContent = drink.kind
+            option.value = drink.kind
+            existingKinds.push(drink.kind)
+            dropdown.appendChild(option)
+          }
+        })
+      })
+  })
 }
 
 function parseJSON(response) {
