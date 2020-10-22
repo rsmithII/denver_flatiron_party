@@ -21,53 +21,48 @@
             </div>
             <main>
                 <h3>Let us know what to bring!</h3>
-            <div id="beer-container">
-                <form method="POST" action="http://localhost:3000/beers">
-                    <label for="beer">Beer : </label>
-                    <input type="text" name="name" placeholder="Add Keg">
-                    <input type="text" name="requested" placeholder="Enter Your Name">
-                    <input type="submit" value="Add Keg">
-                </form>
-             </div>
-                <form method="POST" action="http://localhost:3000/wines">
-                    <label for="wine">Wine : </label>
-                    <input type="text" name="name" kind="kind" placeholder="Add Wine">
-                    <input type="text" name="kind" placeholder="What Kind?">
-                    <input type="text" name="requested" placeholder="Enter Your Name">
-                    <input type="submit" value="Add Bottle ">
-                </form>
-                <form method="POST" action="http://localhost:3000/liquors">
-                    <label for="liquor">Liqour : </label>
-                    <input type="text" name="name" placeholder="Add Bottle">
-                    <input type="text" name="kind" placeholder="What Kind?">
-                    <input type="text" name="requested" placeholder="Enter Your Name">
-                    <input type="submit" value="Add Bottle">
-                </form>
-                <form method="POST" action="http://localhost:3000/mixers">
-                    <label for="mixer">Mixer : </label>
-                    <input type="text" name="name" kind="kind" placeholder="Add beer">
-                    <input type="submit" value="Add Mixer">
-                </form>
+                <div id="form-container" align="center">
+                    <form method="POST" action="http://localhost:3000/beers">
+                      <label for="beer">Beer : </label>
+                      <input type="text" name="name" placeholder="Add Keg">
+                      <input type="text" name="requested" placeholder="Enter Your Name">
+                      <input type="submit" value="Add Keg">
+                    </form>
+                    <form method="POST" action="http://localhost:3000/wines">
+                      <label for="wine">Wine : </label>
+                      <input type="text" name="name" kind="kind" placeholder="Add Wine">
+                      <input type="text" name="requested" placeholder="Enter Your Name">
+                      <input type="submit" value="Add Bottle ">
+                    </form>
+                    <form method="POST" action="http://localhost:3000/liquors">
+                      <label for="liquor">Liqour : </label>
+                      <input type="text" name="name" placeholder="Add Bottle">
+                      <input type="text" name="requested" placeholder="Enter Your Name">
+                      <input type="submit" value="Add Bottle">
+                    </form>
+                    <form method="POST" action="http://localhost:3000/mixers">
+                      <label for="mixer">Mixer : </label>
+                      <input type="text" name="name" kind="kind" placeholder="Add Mixer">
+                      <input type="text" name="requested" placeholder="Enter Your Name">
+                      <input type="submit" value="Add Mixer">
+                    </form>
+                  </div>
                 <h3>Current List</h3>
-                <ul id="drink-list">
-                  <li>Beers
-                  <ul id="beers">
+                <div id="drink-list">
+                  <ul id="beers"><h4>Beers</h4>
 
                   </ul>
-                  </li><li>Wines
-                  <ul id="wines">
+                  <ul id="wines"><h4>Wines</h4>
 
                   </ul>
-                  </li><li>Liquors
-                  <ul id="liquors">
+                  <ul id="liquors"><h4>Liquors</h4>
 
                   </ul>
-                  </li><li>Mixers
-                  <ul id="mixers">
+                  <ul id="mixers"><h4>Mixers</h4>
 
                   </ul>
-                  </li>
-                </ul>
+                </div>
+              </div>
             </main>
 
 

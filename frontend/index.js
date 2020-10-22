@@ -18,7 +18,7 @@ function getDrinkList(){
         const drinksList = document.querySelector(`#${drink}s`)
         drinks.forEach( drink => {
           const li = document.createElement("li")
-          li.textContent = `${drink.name}`
+          li.innerHTML = `<b>${drink.name}</b>` +" <br /> "+` - requested by: ${drink.requested}`
           drinksList.appendChild(li)
         })
       })
