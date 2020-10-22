@@ -10,12 +10,11 @@ body {
 
 #form-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 #form-container > form {
-  display: flex;
   border-radius: 1px;
   border-color: black;
   border-style: solid;
@@ -27,19 +26,19 @@ body {
 
 #drink-list {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   padding: 20px;
   flex-wrap: wrap;
 }
 
 #drink-list > ul {
-  display: flex;
   border-radius: 1px;
   border-color: black;
   border-style: solid;
   margin: 10px;
   padding: 20px;
   min-height: 100%;
+  width: 20%;
 }
 
 h4 {
