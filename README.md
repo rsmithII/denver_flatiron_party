@@ -15,7 +15,7 @@
  Frontend
   1. cd into correct directory
   2. Run npm install
-  3. Start the server ("npm start")
+  3. Start the server ("npm lite-server")
 
 ## Technologies
 - RubyOnRails
